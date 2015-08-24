@@ -1,0 +1,120 @@
+CS442 Design PPattern
+Spring 2014
+PROJECT 3 README FILE
+
+Due Date: Thursday, March 27, 2014
+Submission Date: Thursday, March 28, 2014
+Grace Period Used This Project: 1 day
+Grace Period Remaining: 3 Days
+Author: Ernie Lee
+e-mail: elee36@binghamton.edu
+
+PURPOSE:
+
+[
+	Develop a text based dashboard for a TaskManager. There are three tabs on the dashboard for this assignment.
+     Processes tab has the following information: ProcessName, UserName, CP, Memory, Description
+     Performance tab has the following information; Current Memory usage, current CPU usage. Total Physical memory, Total Cached.
+     Users tab has the following information: userName, status.
+     
+     The format of the data is as follows:
+     	Process Name: value	|	User Name: value-status_value	|	CPU: value	|	Memory: value	|	Description: value
+		Total Memory: value	|	Total Cache: value
+]
+
+PERCENT COMPLETE:
+
+[
+	I believe I have completed 100% of this project.
+]
+
+PARTS THAT ARE NOT COMPLETE:
+
+[
+	I do not believe there are parts that are not complete.
+]
+
+BUGS:
+
+[
+	None
+]
+
+FILES:
+
+[
+	TaskManager.java, the main file associated with the Task Manager program that  also contains main
+	Subject.java, The interface file that contains the required methods needed for a Subject
+	SystemData.java, The file that reads data from the input file. Data from the file is parsed and data passed to observers.
+	Observer.java, The interface file that contains the required methods needed for an Observer
+	Process.java, The file that displays updating data about a process, including process name, user name, cpu, RAM, and description
+	Performance.java, the file that displays updating data about the performance, including current cpu usage and current memory usage
+	Users.java, The file that displays updating data about the current users, including user name, and user status
+	Display.java, the interface file that contains the required method to display on to an output screen
+	Debug.java, the file that prints out a debug level and message if certain actions are involked.
+			DEBUG_VALUE=4 [Print to stdout, using the Logger, everytime an Observer is removed]
+	 		DEBUG_VALUE=3 [Print to stdout, using the Logger, everytime an Observer is added]
+	 		DEBUG_VALUE=2 [Print to stdout, using the Logger, to display all system updates]
+	 		DEBUG_VALUE=1 [Print to stdout, using the Logger, to display the dashboard]
+	 		DEBUG_VALUE=0 [No output should be printed. Only error messages should be printed] 
+	README, the text file currently being read
+]
+
+SAMPLE OUTPUT:
+
+[
+	[java] Processes
+     [java] Process Name: firefox.exe		CPU: 7		Memory: 1002382		User: Ernie		Description: Firefox
+     [java] Process Name: javaw.exe		CPU: 0		Memory: 213233		User: Ernie		Description: Java(TM) Platform SE binary
+     [java] Process Name: VirtualBx.exe		CPU: 13		Memory: 93472		User: Ernie		Description: Oracle VM Virtual Box Manager
+     [java] Process Name: chrome.exe		CPU: 0		Memory: 67178		User: Ernie		Description: Google Chrome
+     [java] Process Name: chrome.exe		CPU: 0		Memory: 92023		User: Lian		Description: Google Chrome
+     [java] Process Name: Origin.exe		CPU: 1		Memory: 59328		User: Ernie		Description: Origin
+     [java] Process Name: explorer.exe		CPU: 0		Memory: 19373		User: Ernie		Description: Windows Explorer
+     [java] Process Name: Spotify.exe		CPU: 0		Memory: 9346		User: Ernie		Description: Spotify
+     [java] Process Name: explorer.exe		CPU: 0		Memory: 25412		User: Lian		Description: Windows Explorer
+     [java] Process Name: Rainmeter.exe		CPU: 10		Memory: 10293		User: Ernie		Description: Rainmeter
+     [java] Process Name: Rainmeter.exe		CPU: 10		Memory: 9232		User: Lian		Description: Rainmeter
+     [java] Process Name: VirtualBx.exe		CPU: 10		Memory: 134123		User: Lian		Description: Oracle VM Virtual Box Manager
+     [java] 
+     [java] Memory
+     [java] Current CPU: 51		Current Memory: 8.676975%		Total Memory: 20000000		Total Cache: 70000
+     [java] 
+     [java] Users
+     [java] User: Ernie		Status: Active
+     [java] User: Lian		Status: Active
+
+	
+]
+
+TO COMPILE:
+
+[
+	Compile as: ant compile
+]
+
+TO RUN:
+
+[
+	To run driver:
+		Please run as: ant run
+]
+
+EXTRA CREDIT:
+
+[
+  N/A
+]
+
+
+BIBLIOGRAPHY:
+
+[
+
+	http://www.stackoverflow.com
+
+  	http://www.cs.binghamton.edu/~mgovinda/courses/csx42/px.html
+  
+   Freeman, Eric, Elisabeth Robson, Kathy Sierra, and Bert Bates. 
+   Head First Design Patterns. Sebastopol, CA: O'Reilly, 2004. Print.
+]
